@@ -33,12 +33,12 @@
   .header-title-logo a {
       display: inline-block;
       max-width: 100%;
-      max-height: 75px;
+      max-height: 85px;
   }
   .header-title-logo img {
       width: auto;
       max-width: 100%;
-      max-height: 70px;
+      max-height: 80px;
   }
   .header-announcement-bar-wrapper {
       max-width: 1300px !IMPORTANT;
@@ -48,12 +48,20 @@
       color: #565758 !important;
       padding: 0px 20px !important;
   }
+
+  .header-nav-list {
+    align-items: center;
+  }
+
   nav.header-nav-list div:last-child a {
       background: #43BB92;
       color: #fff !important;
       text-transform: uppercase !important;
       border-radius: 22px;
+      padding-top: 10px!important;
+      padding-bottom: 10px!important;
   }
+
   .myround h2 {
       font-size: 17px;
       margin-top: 0;
@@ -213,11 +221,17 @@
       font-size: 15px;
       font-weight: 600;
   }
+
   ul.foterlinks {
       display: flex;
       gap: 90px;
       margin: 0;
+      text-align: center;
+      justify-content: center;
+      margin-top: 25px;
+      padding : 0;
   }
+
   h2.copy {
       margin: 0;
       font-size: 12px;
@@ -260,42 +274,29 @@
 //       bottom: 10% !important;
 //   }
   }
-  @media only screen and (max-width: 520px) {
+@media only screen and (max-width: 520px) {
+
     :not(.header--menu-open) .burger-inner .top-bun, :not(.header--menu-open) .burger-inner .patty, :not(.header--menu-open) .burger-inner .bottom-bun {
-      background: #43BB92 !important;
-  }
+        background: #43BB92 !important;
+    }
     .fe-block.fe-block-yui_3_17_2_1_1707305703039_2682 h1 {
-      font-size: 28px !IMPORTANT;
-  }
-    .myround.one {
-      right: 0 !important;
-  }
-      .myround.three {
-      left: 0 !important;
-  }
-    .myround {   
-      padding: 90px 10px!IMPORTANT;
-  }
-    .myround img {
-      width: 50%;
-  }
-    .myround {
-      padding: 50px 30px!IMPORTANT;
-      margin: 10px;
-  }
+        font-size: 28px !IMPORTANT;
+    }
     .user-items-list {
-      padding: 20px !IMPORTANT;
-  }
+        padding: 20px !IMPORTANT;
+    }
     ul.user-items-list-item-container.user-items-list-simple {
-      grid-gap: 40px 30px !important;
-  }
+        grid-gap: 40px 30px !important;
+    }
     div#block-yui_3_17_2_1_1707316010225_61068 {
-      margin-top: -22px !important;
-  }
+        margin-top: -22px !important;
+    }
     div#block-yui_3_17_2_1_1707316010225_46024 {
-      margin-top: -55px !important;
-  }
-  }
+        margin-top: -55px !important;
+    }
+}
+
+
 
 /* Contact section */
 /* Contact section */
@@ -360,7 +361,53 @@
     font-size : 30px
 }
 
+@media (min-width: 1200px) {
+    .myround {
+        width : 300px!important;
+        height: 300px!important;
+    }
+
+   .myround.one {
+        right: -60px;
+    }
+
+    .myround.three {
+        left: -60px;
+    }
+}
+
+@media (max-width: 850px) {
+    ul.foterlinks {
+        flex-direction : column;
+        gap: 0;
+        row-gap: 20px;
+    }
+}
+
 @media (min-width: 768px) {
+
+    .steps__section .fluid-engine {
+        display : flex;
+        justify-content : center;
+    }
+
+    .myround {
+        padding : 0!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .myround.one {
+        right: -40px;
+    }
+
+    .myround.three {
+        left: -40px;
+    }
     
     .contact__section .fluid-engine > :nth-child(1) {
         grid-row-start : 7;
@@ -386,11 +433,40 @@
 
 
 @media (max-width: 767px) {
+
+    .header .header-announcement-bar-wrapper {
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
+
     .homepage .field-list>* {
         width : 100%!important;
     }
-}
 
+
+    .myround.one {
+        right: 0 !important;
+    }
+    .myround.three {
+        left: 0 !important;
+    }
+    
+    .myround img {
+        width: 50%;
+    }
+
+    .myround {
+        margin: 10px auto;
+        max-width: 250px;
+        padding: 0!important;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 
 /*
