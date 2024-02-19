@@ -119,20 +119,20 @@
   .fe-block.fe-block-yui_3_17_2_1_1707305703039_23475:hover {
       z-index: 9999;
   }
+
   .card {
       padding: 10px;
       text-align: center;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 10px;
   }
   .card h2 {
       font-size: 22px;
-        margin-bottom: 0;
-      height: 60px;
+      margin-bottom: 0;
   }
   .card p {
       font-size: 16px;
       color: #565758;
-        height: 140px;
   }
   .card.card1 span {
       text-transform: capitalize;
@@ -206,9 +206,7 @@
   .caption-text {
       color: #fff !important;
   }
-//   yui_3_17_2_1_1707316010225_46024 .caption-text{
-//     color:#fff !important;
-//   }
+
   div#block-edf526833bce1f8375c4, div#block-yui_3_17_2_1_1707316010225_46024 {
       border-radius: 15px;
   }
@@ -244,7 +242,6 @@
     .card p {
       font-size: 16px;
       color: #565758;
-      height: 160px;
   }
     .sqs-html-content h1 {
       font-size: 36px !important;
@@ -270,9 +267,7 @@
     .sqs-html-content p{
          font-size: 20px !important;
     }
-//     .form-button-wrapper.form-button-wrapper--align- button {
-//       bottom: 10% !important;
-//   }
+
   }
 @media only screen and (max-width: 520px) {
 
@@ -296,6 +291,19 @@
     }
 }
 
+
+
+section:has(.myround) {
+    min-height: 50vh!important;
+}
+
+
+.charts__section .sqs-block-content ,
+.charts__section .fe-block .sqs-block,
+.charts__section .fe-block .sqs-block .card {
+    height : 100%;
+    box-sizing: border-box;
+}
 
 
 /* Contact section */
@@ -367,6 +375,10 @@
         height: 300px!important;
     }
 
+    .myround h2 {
+        font-size : 22px;
+    }
+
    .myround.one {
         right: -60px;
     }
@@ -408,6 +420,11 @@
     .myround.three {
         left: -40px;
     }
+
+    .charts__section .fe-block {
+        grid-row-end: 11;
+    }
+
     
     .contact__section .fluid-engine > :nth-child(1) {
         grid-row-start : 7;
