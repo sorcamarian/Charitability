@@ -426,24 +426,32 @@ section:has(.myround) {
     }
 
     
-    .contact__section .fluid-engine > :nth-child(1) {
-        grid-row-start : 7;
-        z-index : 5;
-        grid-row-end: 20;
-    }
-    
-    .contact__section .fluid-engine > :nth-child(1) .form-block {
-        padding-top: 20px!important;
-        padding-bottom: 6%!important;
-    }
-    
     .contact__section .fluid-engine > :nth-child(2) {
-        grid-row-start: 4;
-        z-index: 4;
-    }
-    
-    .contact__section .fluid-engine > :nth-child(2) .html-block {
-        padding-top : 0!important;
+        grid-row-start: 10;
+        z-index: 7;
+        grid-row-end: 20;
+   }
+   
+   .contact__section .fluid-engine > :nth-child(2) .sqs-block {
+       padding-top: 30px!important;
+        padding-bottom : 50px!important;
+   }
+   
+   .contact__section .fluid-engine > :nth-child(3) {
+        grid-row-start: 6;
+        z-index: 5;
+   }
+   
+   .contact__section .fluid-engine > :nth-child(4) {
+       grid-row-end : 7;
+   }
+   
+   .contact__section .fluid-engine > :nth-child(4) .sqs-block {
+       padding-bottom: 0!important;
+   }
+
+    .contact__section .fluid-engine {
+        grid-template-rows: ~"repeat(24,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto))";
     }
 
 }
