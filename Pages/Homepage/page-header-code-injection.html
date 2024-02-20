@@ -9,7 +9,27 @@
     
                 console.log("Squarespace Friendly Selector have been applied to the HTML elements");
 
-                document.querySelector(".contact__section").id = "contact__section";
+                document.querySelector(".contact__section").id = "contact";
+
+                if(window.location.hash.includes("contact__section")) {
+                    setTimeout(() => {
+                        document.querySelector("#contact").scrollIntoView()
+                    }, 500);
+                }
+
+                document.querySelector(".about__section").id = "about";
+                if(window.location.hash.includes("about")) {
+                    setTimeout(() => {
+                        document.querySelector("#about").scrollIntoView()
+                    }, 500);
+                }
+
+                document.querySelector(".products__section").id = "products";
+                if(window.location.hash.includes("products")) {
+                    setTimeout(() => {
+                        document.querySelector("#products").scrollIntoView()
+                    }, 500);
+                }
                 
               });
     

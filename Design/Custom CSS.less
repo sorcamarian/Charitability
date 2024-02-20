@@ -11,6 +11,13 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face{
+    font-family: 'Calibre';
+    src: url(https://static1.squarespace.com/static/5cfa809e026e020001881f64/t/65d3b353f7124d0195b0fa13/1708372819197/Calibre-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
   
   h1, h2, h3{
     font-family: 'spartan', 'Roboto', Arial, sans-serif;
@@ -239,10 +246,6 @@
       margin-top: 30px;
   }
   @media only screen and (max-width: 1440px) {
-    .card p {
-      font-size: 16px;
-      color: #565758;
-  }
     .sqs-html-content h1 {
       font-size: 36px !important;
   }
@@ -270,10 +273,6 @@
 
   }
 @media only screen and (max-width: 520px) {
-
-    :not(.header--menu-open) .burger-inner .top-bun, :not(.header--menu-open) .burger-inner .patty, :not(.header--menu-open) .burger-inner .bottom-bun {
-        background: #43BB92 !important;
-    }
     .fe-block.fe-block-yui_3_17_2_1_1707305703039_2682 h1 {
         font-size: 28px !IMPORTANT;
     }
@@ -292,9 +291,36 @@
 }
 
 
+:not(.header--menu-open) .burger-inner .top-bun, :not(.header--menu-open) .burger-inner .patty, :not(.header--menu-open) .burger-inner .bottom-bun {
+    background: #43BB92 !important;
+}
+
 
 section:has(.myround) {
     min-height: 50vh!important;
+}
+
+
+// First section - Intro
+#sections > :first-child * {
+    font-family : "Calibri"
+}
+
+#sections > :first-child h1 {
+    font-size: 90px!important;
+}
+
+#sections > :first-child p {
+    letter-spacing : 2px;
+}
+
+#sections > :first-child figure {
+    max-width : 150px!important;
+}
+
+#sections > :first-child .html-block {
+    padding-bottom : 0;
+    padding-top : 0;
 }
 
 
@@ -463,6 +489,17 @@ section:has(.myround) {
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
     }
+
+
+    #sections > :first-child h1 {
+        font-size: 50px!important;
+    }
+
+
+    .about__section .content-wrapper {
+        padding-bottom : 0!important;
+    }
+
 
     .homepage .field-list>* {
         width : 100%!important;
