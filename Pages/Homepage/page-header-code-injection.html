@@ -9,28 +9,39 @@
     
                 console.log("Squarespace Friendly Selector have been applied to the HTML elements");
 
-                document.querySelector(".contact__section").id = "contact";
-
-                if(window.location.hash.includes("contact__section")) {
+                // document.querySelector(".contact__section").id = "contact";
+                if(window.location.hash.includes("contact")) {
                     setTimeout(() => {
-                        document.querySelector("#contact").scrollIntoView()
+                        document.querySelector(".contact__section").scrollIntoView();
                     }, 500);
                 }
+                Y.all("a[href*='#contact']").on("click", function(event){
+                    event.preventDefault();
+                    document.querySelector(".contact__section").scrollIntoView();
+                });
 
-                document.querySelector(".about__section").id = "about";
+                // document.querySelector(".about__section").id = "about";
                 if(window.location.hash.includes("about")) {
                     setTimeout(() => {
-                        document.querySelector("#about").scrollIntoView()
+                        document.querySelector(".about__section").scrollIntoView();
                     }, 500);
                 }
+                Y.all("a[href*='#about']").on("click", function(event){
+                    event.preventDefault();
+                    document.querySelector(".about__section").scrollIntoView();
+                });
 
-                document.querySelector(".products__section").id = "products";
+                // document.querySelector(".products__section").id = "products";
                 if(window.location.hash.includes("products")) {
                     setTimeout(() => {
-                        document.querySelector("#products").scrollIntoView()
+                        document.querySelector(".products__section").scrollIntoView();
                     }, 500);
                 }
-                
+                Y.all("a[href*='#products']").on("click", function(event){
+                    event.preventDefault();
+                    document.querySelector(".products__section").scrollIntoView();
+                });
+
               });
     
           }
